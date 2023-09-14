@@ -1,0 +1,30 @@
+<apex:page controller="ArthmeticClass">
+    <apex:form >
+        <apex:pageBlock title="CALCULATE">
+            <apex:pageblockButtons >
+                <apex:commandButton value="ADD" action="{!addition}"/>
+                <apex:commandButton value="SUB" action="{!substraction}"/>
+                <apex:commandButton value="DIV" action="{!divide}"/>
+                <apex:commandButton value="MUL" action="{!multipication}"/>
+                <apex:commandButton value="REM" action="{!remainder}"/>
+            </apex:pageblockButtons>
+                <apex:pageblockSection title="ENTER NUMBERS" collapsible="false">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="FIRST NUMBER"/>
+                        <apex:inputtext value="{!num1}"/>
+                    </apex:pageBlockSectionItem><br/>
+                
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="SECOND NUMBER"/>
+                        <apex:inputtext value="{!num2}" />
+                    </apex:pageBlockSectionItem><br/>          
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputlabel value="RESULT"/>
+                        <apex:inputtext value="{!res}"/>
+                    </apex:pageBlockSectionItem>         
+            
+                </apex:pageblockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

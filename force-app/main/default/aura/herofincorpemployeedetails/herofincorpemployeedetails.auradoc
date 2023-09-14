@@ -1,0 +1,6 @@
+<aura:documentation>
+	<aura:description>This Component is used to get the information about the new Employee into our Company</aura:description>
+	<aura:example name="herofincoremployeedetails" ref="c:herofincorpemployeedetails" label="Hero Fincorp Employeee">
+		This Component is used to get the information about the new Employee into our Company
+	</aura:example>
+</aura:documentation>

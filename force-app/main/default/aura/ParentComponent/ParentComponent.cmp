@@ -1,0 +1,4 @@
+<aura:component >
+    <c:ChildComponent/>
+    <aura:handler name="myevent" event="c:myevent" action="{!c.handleEvent}"/>
+</aura:component>

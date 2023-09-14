@@ -1,0 +1,8 @@
+<aura:component >
+    <aura:attribute type="String" name="text" default="Amit"/>
+    <div>
+    	<p>
+        	{!v.text}
+        </p>
+    </div>
+</aura:component>

@@ -1,0 +1,39 @@
+<apex:page standardController="employee__c">
+    <apex:form >
+        <apex:pageBlock title="Employee Information">
+            <apex:pageblockButtons >
+                <apex:commandButton value="SAVE" action="{!save}"/>
+                <apex:commandButton value="EDIT" action="{!edit}"/>
+                <apex:commandButton value="DELETE" action="{!delete}"/>
+                <apex:commandButton value="CANCEL" action="{!cancel}"/>
+            </apex:pageblockButtons>
+                <apex:pageblockSection title="Employee Details" collapsible="false">
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Employee"/>
+                        <apex:outputField value="{!employee__c.name}"/>
+                    </apex:pageBlockSectionItem><br/>
+                
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Employee Name"/>
+                        <apex:outputField value="{!employee__c.ename__c}"/>
+                    </apex:pageBlockSectionItem><br/>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Employee Salary"/>
+                        <apex:outputField value="{!employee__c.salary__c}"/>
+                    </apex:pageBlockSectionItem><br/>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Employee Job"/>
+                        <apex:outputField value="{!employee__c.job__c}"/>
+                    </apex:pageBlockSectionItem><br/>
+                    
+                    <apex:pageBlockSectionItem >
+                        <apex:outputLabel value="Employee Deptno"/>
+                        <apex:outputField value="{!employee__c.deptno__c}"/>
+                    </apex:pageBlockSectionItem>
+            
+                </apex:pageblockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

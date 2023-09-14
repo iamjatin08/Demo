@@ -1,0 +1,16 @@
+<apex:page sidebar="true" showheader="true" rendered="true" tabStyle="campaign">
+    <apex:sectionHeader title="Employee" subtitle="Hero Fincorp" description="We all are hero emmployees" help="https://google.com"/>
+        <apex:form >
+            <apex:pageblock title="Employees List">
+            <apex:pageblockButtons location="both">
+               <apex:commandButton value="SAVE" style="color:green;background:yellow"/> 
+               <apex:commandButton value="CANCEL" style="black:green;background:white"/>                
+            </apex:pageblockButtons>
+            
+        jatin<br/>
+        yash raj<br/>
+        rohit                
+            </apex:pageblock>
+        </apex:form>
+    
+</apex:page>

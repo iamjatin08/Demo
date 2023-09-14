@@ -1,0 +1,36 @@
+<apex:page standardController="Merchandise__c">
+  <apex:form >
+      <apex:pageBlock title="Merchandise Form">
+         
+         <apex:pageblockButtons >
+             <apex:commandButton value="SAVE" action="{!save}"/>
+             <apex:commandButton value="CANCEL" action="{!cancel}"/>
+         </apex:pageblockButtons>
+         
+         <apex:pageblockSection title="ENTER DETAILS">
+         
+             <apex:pageblocksectionItem >
+                 <apex:outputLabel > Merchandise name </apex:outputLabel>
+                 <apex:inputText value="{!Merchandise__c.name}"/>
+             </apex:pageblocksectionItem><br/>
+             
+             <apex:pageblocksectionItem >
+                 <apex:outputLabel >Merchandise Description </apex:outputLabel>
+                 <apex:inputText value="{!Merchandise__c.Merchandise_Desc__c}"/>
+             </apex:pageblocksectionItem><br/>
+             
+             <apex:pageblocksectionItem >
+                 <apex:outputLabel > Merchandise Stocks </apex:outputLabel>
+                 <apex:inputText value="{!Merchandise__c.Merchandise_Stocks__c}"/>
+             </apex:pageblocksectionItem><br/>
+             
+             <apex:pageblocksectionItem >
+                 <apex:outputLabel > Merchandise Price </apex:outputLabel>
+                 <apex:inputText value="{!Merchandise__c.Merchandise_Price__c}"/>
+             </apex:pageblocksectionItem>
+         
+         </apex:pageblockSection>
+      
+      </apex:pageBlock>
+   </apex:form>
+</apex:page>
